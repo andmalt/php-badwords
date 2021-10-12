@@ -25,11 +25,32 @@
 
     <h3>
         <?php
-            echo $_GET["key"]
+           $neword = $_GET["key"];
+
+           echo $neword;
+
+          $newLorem = $lorem.$neword;
         ?>
     </h3>
 
+    <p>
+        <?php
+            $changeParag = str_replace($neword ,'***', $newLorem);
 
+            echo $changeParag;
 
+           
+        ?>
+        <br>
+        length new parag:
+        
+    </p>
+
+    <h5>
+         length string is
+        <?php
+            echo strlen($changeParag);
+        ?>
+    </h5>
 </body>
 </html>
