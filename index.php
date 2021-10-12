@@ -20,10 +20,14 @@
     </p>
 
     <h5>
-        lenght string is <?php echo strlen($lorem); ?> .
+        length string is <?php echo strlen($lorem); ?> .
     </h5>
 
-
+    <h3>
+        <?php
+            echo $_GET["key"]
+        ?>
+    </h3>
 
 
 
